@@ -1,0 +1,1252 @@
+{
+  "title": "com.macjutsu.super",
+  "__version": "1.0",
+  "__preferencedomain": "com.macjutsu.super",
+  "links": [
+    {
+      "rel": "S.U.P.E.R.M.A.N. Wiki - S.U.P.E.R.M.A.N. (or just super) is an open source script that provides administrators with a comprehensive solution to encourage and enforce macOS minor updates, macOS major upgrades, Jamf Pro Policies, or enforced system restarts",
+      "href": "https://github.com/Macjutsu/super/wiki"
+    }
+  ],
+  "options": {
+    "remove_empty_properties": true
+  },
+  "properties": {
+    "AuthAskUserToSavePassword": {
+      "title": "AuthAskUserToSavePassword",
+      "description": "AuthAskUserToSavePassword",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "boolean"
+        }
+      ]
+    },
+    "AuthCredentialFailoverToUser": {
+      "title": "AuthCredentialFailoverToUser",
+      "description": "AuthCredentialFailoverToUser",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "boolean"
+        }
+      ]
+    },
+    "AuthJamfComputerID": {
+      "title": "AuthJamfComputerID",
+      "description": "AuthJamfComputerID",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "$JSSID"
+            }
+          }
+        }
+      ]
+    },
+    "AuthJamfCustomURL": {
+      "title": "AuthJamfCustomURL",
+      "description": "AuthJamfCustomURL",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "https://jamf-api.example.domain.com"
+            }
+          }
+        }
+      ]
+    },
+    "AuthMDMFailoverToUser": {
+      "title": "AuthMDMFailoverToUser",
+      "description": "AuthMDMFailoverToUser",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "ERROR"
+            }
+          }
+        }
+      ]
+    },
+    "DeadlineCountFocus": {
+      "title": "DeadlineCountFocus",
+      "description": "DeadlineCountFocus",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "5"
+            }
+          }
+        }
+      ]
+    },
+    "DeadlineCountHard": {
+      "title": "DeadlineCountHard",
+      "description": "DeadlineCountHard",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "5"
+            }
+          }
+        }
+      ]
+    },
+    "DeadlineCountSoft": {
+      "title": "DeadlineCountSoft",
+      "description": "DeadlineCountSoft",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "5"
+            }
+          }
+        }
+      ]
+    },
+    "DeadlineDateFocus": {
+      "title": "DeadlineDateFocus",
+      "description": "DeadlineDateFocus",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "2023-09-21:00:00"
+            }
+          }
+        }
+      ]
+    },
+    "DeadlineDateHard": {
+      "title": "DeadlineDateHard",
+      "description": "DeadlineDateHard",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "2023-09-27:00:00"
+            }
+          }
+        }
+      ]
+    },
+    "DeadlineDateSoft": {
+      "title": "DeadlineDateSoft",
+      "description": "DeadlineDateSoft",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "2023-09-25:00:00"
+            }
+          }
+        }
+      ]
+    },
+    "DeadlineDaysFocus": {
+      "title": "DeadlineDaysFocus",
+      "description": "DeadlineDaysFocus",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "3"
+            }
+          }
+        }
+      ]
+    },
+    "DeadlineDaysHard": {
+      "title": "DeadlineDaysHard",
+      "description": "DeadlineDaysHard",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "7"
+            }
+          }
+        }
+      ]
+    },
+    "DeadlineDaysSoft": {
+      "title": "DeadlineDaysSoft",
+      "description": "DeadlineDaysSoft",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "5"
+            }
+          }
+        }
+      ]
+    },
+    "DeferralTimerDefault": {
+      "title": "DeferralTimerDefault",
+      "description": "DeferralTimerDefault",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "60"
+            }
+          }
+        }
+      ]
+    },
+    "DeferralTimerError": {
+      "title": "DeferralTimerError",
+      "description": "DeferralTimerError",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "60"
+            }
+          }
+        }
+      ]
+    },
+    "DeferralTimerFocus": {
+      "title": "DeferralTimerFocus",
+      "description": "DeferralTimerFocus",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "60"
+            }
+          }
+        }
+      ]
+    },
+    "DeferralTimerMenu": {
+      "title": "DeferralTimerMenu",
+      "description": "DeferralTimerMenu",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "15,60,240,1440"
+            }
+          }
+        }
+      ]
+    },
+    "DeferralTimerWorkflowRelaunch": {
+      "title": "DeferralTimerWorkflowRelaunch",
+      "description": "DeferralTimerWorkflowRelaunch",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "360"
+            }
+          }
+        }
+      ]
+    },
+    "DialogTimeoutDefault": {
+      "title": "DialogTimeoutDefault",
+      "description": "DialogTimeoutDefault",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "600"
+            }
+          }
+        }
+      ]
+    },
+    "DialogTimeoutInsufficientStorage": {
+      "title": "DialogTimeoutInsufficientStorage",
+      "description": "DialogTimeoutInsufficientStorage",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "600"
+            }
+          }
+        }
+      ]
+    },
+    "DialogTimeoutPowerRequired": {
+      "title": "DialogTimeoutPowerRequired",
+      "description": "DialogTimeoutPowerRequired",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "600"
+            }
+          }
+        }
+      ]
+    },
+    "DialogTimeoutSoftDeadline": {
+      "title": "DialogTimeoutSoftDeadline",
+      "description": "DialogTimeoutSoftDeadline",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "600"
+            }
+          }
+        }
+      ]
+    },
+    "DialogTimeoutUserAuth": {
+      "title": "DialogTimeoutUserAuth",
+      "description": "DialogTimeoutUserAuth",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "600"
+            }
+          }
+        }
+      ]
+    },
+    "DialogTimeoutUserChoice": {
+      "title": "DialogTimeoutUserChoice",
+      "description": "DialogTimeoutUserChoice",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "600"
+            }
+          }
+        }
+      ]
+    },
+    "DialogTimeoutUserSchedule": {
+      "title": "DialogTimeoutUserSchedule",
+      "description": "DialogTimeoutUserSchedule",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "600"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayAccessoryDefaultFile": {
+      "title": "DisplayAccessoryDefaultFile",
+      "description": "DisplayAccessoryDefaultFile",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "https://raw.githubusercontent.com/Macjutsu/super/main/Super-Friends/Display-Accessory-Example.html"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayAccessoryJamfPolicyTriggersFile": {
+      "title": "DisplayAccessoryJamfPolicyTriggersFile",
+      "description": "DisplayAccessoryJamfPolicyTriggersFile",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "path or URL"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayAccessoryMacOSMajorUpgradeFile": {
+      "title": "DisplayAccessoryMacOSMajorUpgradeFile",
+      "description": "DisplayAccessoryMacOSMajorUpgradeFile",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "path or URL"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayAccessoryMacOSMinorUpdateFile": {
+      "title": "DisplayAccessoryMacOSMinorUpdateFile",
+      "description": "DisplayAccessoryMacOSMinorUpdateFile",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "path or URL"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayAccessoryNonSystemUpdatesFile": {
+      "title": "DisplayAccessoryNonSystemUpdatesFile",
+      "description": "DisplayAccessoryNonSystemUpdatesFile",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "path or URL"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayAccessoryRestartWithoutUpdatesFile": {
+      "title": "DisplayAccessoryRestartWithoutUpdatesFile",
+      "description": "DisplayAccessoryRestartWithoutUpdatesFile",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "path or URL"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayAccessoryType": {
+      "title": "DisplayAccessoryType",
+      "description": "DisplayAccessoryType",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "HTML"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayHelpButtonString": {
+      "title": "DisplayHelpButtonString",
+      "description": "DisplayHelpButtonString",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "https://support.apple.com/en-us/HT201541"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayHideBackground": {
+      "title": "DisplayHideBackground",
+      "description": "DisplayHideBackground",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "DEADLINE,INSTALLNOW"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayHideProgressBar": {
+      "title": "DisplayHideProgressBar",
+      "description": "DisplayHideProgressBar",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "DEADLINE,INSTALLNOW"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayIconDarkFile": {
+      "title": "DisplayIconDarkFile",
+      "description": "DisplayIconDarkFile",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/BurningIcon.icns"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayIconFile": {
+      "title": "DisplayIconFile",
+      "description": "DisplayIconFile",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/BurningIcon.icns"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayIconLightFile": {
+      "title": "DisplayIconLightFile",
+      "description": "DisplayIconLightFile",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/BurningIcon.icns"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayIconSize": {
+      "title": "DisplayIconSize",
+      "description": "DisplayIconSize",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "128"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayNotificationsCentered": {
+      "title": "DisplayNotificationsCentered",
+      "description": "DisplayNotificationsCentered",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "DEADLINE,INSTALLNOW"
+            }
+          }
+        }
+      ]
+    },
+    "DisplaySilently": {
+      "title": "DisplaySilently",
+      "description": "DisplaySilently",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "INSTALLNOW"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayUnmovable": {
+      "title": "DisplayUnmovable",
+      "description": "DisplayUnmovable",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "ALWAYS"
+            }
+          }
+        }
+      ]
+    },
+    "DisplayWarningButtonString": {
+      "title": "DisplayWarningButtonString",
+      "description": "DisplayWarningButtonString",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "https://support.apple.com/en-us/HT201222"
+            }
+          }
+        }
+      ]
+    },
+    "InstallJamfPolicyTriggers": {
+      "title": "InstallJamfPolicyTriggers",
+      "description": "With this option enabled the super workflow runs the Jamf Pro Policy Triggers immediately before the restart for a macOS update or upgrade. As a default super workflow behavior, Jamf Pro Policies only run if the system also needs to restart for Apple software updates. Alternately, this option can be used along with the --install-jamf-policy-triggers-without-restarting option so even when there are no macOS updates available you can still take advantage of dialogs, notifications, schedules, deferrals, and deadlines provided by super. When deploying super using the command line, if any Policy Trigger names contains any special characters or spaces then you should surround the text with single  quotes. However, when deploying super using a Jamf Pro Policy with Script Parameters do not use single quotes.",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "trigger1,trigger2,trigger3"
+            }
+          }
+        }
+      ]
+    },
+    "InstallJamfPolicyTriggersWithoutRestarting": {
+      "title": "InstallJamfPolicyTriggersWithoutRestarting",
+      "description": "InstallJamfPolicyTriggersWithoutRestarting",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "boolean"
+        }
+      ]
+    },
+    "InstallMacOSMajorUpgrades": {
+      "title": "InstallMacOSMajorUpgrades",
+      "description": "With this option true super leverages built-in commands and the mist-cli command to find compatible macOS major upgrade versions. If a newer macOS major upgrade is available then super attempts to download and install the upgrade. The default super workflow always targets the newest compatible macOS major upgrade version. Even if there is no macOS major upgrade available, and you leave this option enabled, super continues to install any available macOS minor updates. In other words, if you enable the InstallMacOSMajorUpgrades true option then super attempts all macOS minor updates and major upgrades throughout time.",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "boolean"
+        }
+      ]
+    },
+    "InstallMacOSMajorVersionTarget": {
+      "title": "InstallMacOSMajorVersionTarget",
+      "description": "For example, if you specified InstallMacOSMajorVersionTarget 14 then super never attempts to install major upgrades to macOS 15 or newer. Because macOS can not be downgraded without a full system reset, super likewise can not downgrade macOS systems to older versions even if this option is specified. However, even with the option to limit macOS major upgrades enabled, super continues to install any available macOS minor updates. In other words, if you enable theInstallMacOSMajorVersionTarget 14 option then super attempts to keep the system up to date with the newest version of macOS 14.",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "14"
+            }
+          }
+        }
+      ]
+    },
+    "InstallNonSystemUpdatesWithoutRestarting": {
+      "title": "InstallNonSystemUpdatesWithoutRestarting",
+      "description": "Due to limitations in the macOS softwareupdate command, attempting to simultaneously install non-system Apple software updates (like Safari or Xcode Command Line Tools) at the same time as a macOS update or upgrade is unreliable. As such, the default super workflow prioritizes macOS updates and upgrades by installing them first. Then immediately after restarting from a macOS update or upgrade, the super restart validation workflow installs any available non-system Apple software updates. Enabling the --install-non-system-updates-without-restarting option allows super to install any non-system Apple software updates that become available between macOS releases. If there is no active user when this workflow runs then non-system Apple software updates are immediately downloaded and installed. However, if there is an active user, then an update dialog is presented to the user. The non-system Apple software update dialog is similar to the the standard macOS update or upgrade dialog except that the user is prompted to simply Install rather than Restart. The non-system Apple software updates dialog.",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "boolean"
+        }
+      ]
+    },
+    "InstallRapidSecurityResponses": {
+      "title": "InstallRapidSecurityResponses",
+      "description": "Apple introduced RSR updates with macOS 13, so this setting is ignored on older versions of macOS. Even though RSR updates are significantly smaller downloads and install much faster than normal macOS minor updates they still require a restart to be fully enabled. As such, if this option is enabled then super macOS RSR update workflows behave similar normal macOS minor update. When Apple releases a normal macOS minor update that is newer than the previous RSR update, softwareupdate no longer allows for installation of the previous RSR update. In this case, the super workflow also returns to attempting the newer normal macOS minor update.",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "boolean"
+        }
+      ]
+    },
+    "ScheduleWorkflowActive": {
+      "title": "ScheduleWorkflowActive",
+      "description": "ScheduleWorkflowActive",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "TUE:13:00-17:00,WED:13:00-17:00,THU:13:00-17:00"
+            }
+          }
+        }
+      ]
+    },
+    "ScheduleZeroDateManual": {
+      "title": "ScheduleZeroDateManual",
+      "description": "ScheduleZeroDateManual",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "2023-09-21:00:00"
+            }
+          }
+        }
+      ]
+    },
+    "ScheduleZeroDateRelease": {
+      "title": "ScheduleZeroDateRelease",
+      "description": "ScheduleZeroDateRelease",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "boolean"
+        }
+      ]
+    },
+    "ScheduleZeroDateSOFACustomURL": {
+      "title": "ScheduleZeroDateSOFACustomURL",
+      "description": "ScheduleZeroDateSOFACustomURL",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "https://sofa.example.domain.com/v1/macos_data_feed.json"
+            }
+          }
+        }
+      ]
+    },
+    "ScheduledInstallDate": {
+      "title": "ScheduledInstallDate",
+      "description": "ScheduledInstallDate",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "2023-09-21:00:00"
+            }
+          }
+        }
+      ]
+    },
+    "ScheduledInstallDays": {
+      "title": "ScheduledInstallDays",
+      "description": "ScheduledInstallDays",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "3"
+            }
+          }
+        }
+      ]
+    },
+    "ScheduledInstallReminder": {
+      "title": "ScheduledInstallReminder",
+      "description": "ScheduledInstallReminder",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "15,60,240,1440"
+            }
+          }
+        }
+      ]
+    },
+    "ScheduledInstallUserChoice": {
+      "title": "ScheduledInstallUserChoice",
+      "description": "ScheduledInstallUserChoice",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "boolean"
+        }
+      ]
+    },
+    "TestBatteryLevel": {
+      "title": "TestBatteryLevel",
+      "description": "TestBatteryLevel",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "75"
+            }
+          }
+        }
+      ]
+    },
+    "TestMode": {
+      "title": "TestMode",
+      "description": "TestMode",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "boolean"
+        }
+      ]
+    },
+    "TestModeTimeout": {
+      "title": "TestModeTimeout",
+      "description": "TestModeTimeout",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "60"
+            }
+          }
+        }
+      ]
+    },
+    "TestStorageUpdate": {
+      "title": "TestStorageUpdate",
+      "description": "TestStorageUpdate",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "25"
+            }
+          }
+        }
+      ]
+    },
+    "TestStorageUpgrade": {
+      "title": "TestStorageUpgrade",
+      "description": "TestStorageUpgrade",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "string",
+          "options": {
+            "inputAttributes": {
+              "placeholder": "25"
+            }
+          }
+        }
+      ]
+    },
+    "VerboseMode": {
+      "title": "VerboseMode",
+      "description": "VerboseMode",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "boolean"
+        }
+      ]
+    },
+    "WorkflowDisableRelaunch": {
+      "title": "WorkflowDisableRelaunch",
+      "description": "WorkflowDisableRelaunch",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "boolean"
+        }
+      ]
+    },
+    "WorkflowDisableUpdateCheck": {
+      "title": "WorkflowDisableUpdateCheck",
+      "description": "WorkflowDisableUpdateCheck",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "boolean"
+        }
+      ]
+    },
+    "WorkflowInstallNow": {
+      "title": "WorkflowInstallNow",
+      "description": "WorkflowInstallNow",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "boolean"
+        }
+      ]
+    },
+    "WorkflowOnlyDownload": {
+      "title": "WorkflowOnlyDownload",
+      "description": "WorkflowOnlyDownload",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "boolean"
+        }
+      ]
+    },
+    "WorkflowRestartWithoutUpdates": {
+      "title": "WorkflowRestartWithoutUpdates",
+      "description": "WorkflowRestartWithoutUpdates",
+      "anyOf": [
+        {
+          "type": "null",
+          "title": "Not Configured"
+        },
+        {
+          "title": "Configured",
+          "type": "boolean"
+        }
+      ]
+    }
+  }
+}
